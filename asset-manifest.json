@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/highlighter-react/static/css/main.d1b05096.chunk.css",
+    "main.js": "/highlighter-react/static/js/main.ca7fbce7.chunk.js",
+    "main.js.map": "/highlighter-react/static/js/main.ca7fbce7.chunk.js.map",
+    "runtime-main.js": "/highlighter-react/static/js/runtime-main.1819de99.js",
+    "runtime-main.js.map": "/highlighter-react/static/js/runtime-main.1819de99.js.map",
+    "static/js/2.c925fc20.chunk.js": "/highlighter-react/static/js/2.c925fc20.chunk.js",
+    "static/js/2.c925fc20.chunk.js.map": "/highlighter-react/static/js/2.c925fc20.chunk.js.map",
+    "index.html": "/highlighter-react/index.html",
+    "precache-manifest.4a7b44c8000dc775279628d0ef66eaf7.js": "/highlighter-react/precache-manifest.4a7b44c8000dc775279628d0ef66eaf7.js",
+    "service-worker.js": "/highlighter-react/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/highlighter-react/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.c925fc20.chunk.js.LICENSE": "/highlighter-react/static/js/2.c925fc20.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1819de99.js",
+    "static/js/2.c925fc20.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.ca7fbce7.chunk.js"
+  ]
+}
