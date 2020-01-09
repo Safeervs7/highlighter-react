@@ -1,8 +1,12 @@
 
 const mainTheme = {
-    bgRed:{
-        backgroundColor:'#4051b57d'
-    }
+    customBg:{
+        backgroundColor:'#dfe09b',
+        color: '#000000'
+    },
+    customPaddingTop: {
+        paddingTop: '20px'
+    },
 }
 
 export default (mainTheme);

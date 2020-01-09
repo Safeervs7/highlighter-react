@@ -7,10 +7,10 @@ import Typography from '@material-ui/core/Typography';
 import { ThemeContext } from '../context/ThemeProvider';
 
 const Banner =(props)=> {
-  const contextType = useContext(ThemeContext);
+  const themeContext = useContext(ThemeContext);
   return  (
     <Toolbar>
-      <AppBar className={contextType.classes.bgRed}>
+      <AppBar className={themeContext.classes.customBg}>
         <Toolbar>
           <Typography variant="h6">Highlighter</Typography>
         </Toolbar>

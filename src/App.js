@@ -7,6 +7,7 @@ import Header from './containers/Header';
 import ErrorPage from './containers/ErrorPage';
 import ThemeProvider from './context/ThemeProvider';
 import DataProvider from './context/DataProvider';
+import DataTable from './containers/DataTable';
 
 import './App.css';
 
@@ -18,7 +19,7 @@ function App() {
                 <Header></Header>
                 <Router>
                   <Switch>
-                          {/* <Route component={Header} exact path='/' /> */}
+                          <Route component={DataTable} exact path='/' />
                           <Route path="*" component={ErrorPage}/>
                   </Switch>
                 </Router>

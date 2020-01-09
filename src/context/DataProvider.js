@@ -17,14 +17,13 @@ const DataProvider =(props)=> {
           setHighlightFile(data.highlight);
         }
       });
-      setIsDataFetched(true);
     }
 
     useEffect(() => {
         if(!isDataFetched){
             getFetchData();
+            setIsDataFetched(true);
         }
-        setIsDataFetched(true);
     }, [isDataFetched]);
     return (
       <DataContext.Provider value={{dataFile:dataFile, highlightFile: highlightFile}}>
