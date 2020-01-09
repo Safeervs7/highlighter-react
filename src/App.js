@@ -20,6 +20,7 @@ function App() {
                 <Router>
                   <Switch>
                           <Route component={DataTable} exact path='/' />
+                          <Route component={DataTable} exact path='/highlighter-react/' /> {/* For Github */}
                           <Route path="*" component={ErrorPage}/>
                   </Switch>
                 </Router>
