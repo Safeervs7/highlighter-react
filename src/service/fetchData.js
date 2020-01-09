@@ -10,7 +10,29 @@ const fetchData = async ()=>{
     let highlight =  await axios
         .get('./data/highlight.json')
         .then(({ data })=> {
-            return data;
+            let highlightArray = {
+                inclusion: [],
+                exclusion: [],
+            };
+
+            //re structure highlighter json
+            if(data && data.formattedAnnotations){
+                data.formattedAnnotations.forEach((annotation)=>{
+                    if(annotation && annotation.annotations && annotation.annotations.annotations && annotation.annotations.annotations.encounters){
+                        if(annotation.annotations.annotations.encounters.inclusion){
+                            annotation.annotations.annotations.encounters.inclusion.forEach((inclusion)=>{
+                                highlightArray.inclusion.push(inclusion);
+                            });
+                        }
+                        if(annotation.annotations.annotations.encounters.exclusion){
+                            annotation.annotations.annotations.encounters.exclusion.forEach((exclusion)=>{
+                                highlightArray.exclusion.push(exclusion);
+                            });
+                        }
+                    }
+                });
+            }
+            return highlightArray;
         })
         .catch((err)=> {});
     return {

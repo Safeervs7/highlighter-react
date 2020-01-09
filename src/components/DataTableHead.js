@@ -8,7 +8,6 @@ import {ThemeContext} from '../context/ThemeProvider';
 
 const DataTableHead = (props) =>{
     const themeContext = useContext(ThemeContext);
-    console.log(themeContext);
     return (
             <TableHead>
                <TableRow>
