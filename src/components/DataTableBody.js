@@ -11,11 +11,11 @@ const DataTableBody = (props) =>{
             {
                 props.value.data.map(row => (
                   <TableRow key={row.date}>
-                    <TableCell align="right">{row.date}</TableCell>
-                    <TableCell align="right">{row.name}</TableCell>
-                    <TableCell align="right">{row.code}</TableCell>
-                    <TableCell align="right">{row.code_system}</TableCell>
-                    <TableCell align="right">{row.code_system_name}</TableCell>
+                    <TableCell align="left">{row.date}</TableCell>
+                    <TableCell align="left">{row.name}</TableCell>
+                    <TableCell align="left">{row.code}</TableCell>
+                    <TableCell align="left">{row.code_system}</TableCell>
+                    <TableCell align="left">{row.code_system_name}</TableCell>
                   </TableRow>
                 ))
             }

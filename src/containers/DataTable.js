@@ -9,6 +9,7 @@ import { ThemeContext } from '../context/ThemeProvider';
 
 import DataTableHead from '../components/DataTableHead';
 import DataTableBody from '../components/DataTableBody';
+import DataTableEmptyBody from '../components/DataTableEmptyBody';
 
 const DataTable = () =>{
     const dataContext = useContext(DataContext);
@@ -24,7 +25,11 @@ const DataTable = () =>{
         <TableContainer component={Paper} className={themeContext.classes.customPaddingTop}>
           <Table aria-label="simple table">
             <DataTableHead value={{head:tableHeadArray}}></DataTableHead>
-            <DataTableBody value={{data:tableData}}></DataTableBody>
+            {tableData.length > 0 ? (
+              <DataTableBody value={{data:tableData}}></DataTableBody>
+            ) : (
+              <DataTableEmptyBody cellCount={tableHeadArray.length}></DataTableEmptyBody>
+            )}
           </Table>
         </TableContainer>
     );
